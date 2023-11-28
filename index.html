@@ -4,30 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../AR-Project/css/styles.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
-    <!-- <model-viewer src="./models/Chair_2.glb"
-              alt="A 3D model of a chair"
-              ar
-              auto-rotate
-              camera-controls></model-viewer>
 
-
-    <model-viewer src="../AR-Project/models/Chair_1.glb"
-              alt="A 3D model of a chair"
-              ar
-              auto-rotate
-              camera-controls></model-viewer> -->
-            
-    <model-viewer class="larger-example" src="../AR-Project/models/Chair_2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="0.85" exposure="0.95" shadow-softness="0.99">
-                <button class="Hotspot" slot="hotspot-1" data-position="-0.6182989537587867m 1.143372374710182m -0.12490057744144456m" data-normal="0.8973512874623126m 0.3089969860856231m 0.3150897165566202m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">Solid wood frame
-                    </div>
-                </button><button class="Hotspot" slot="hotspot-2" data-position="-0.13189463915885075m 0.6504015767558957m -0.3052344187515641m" data-normal="-0.007746660481446617m 0.9996602997529233m 0.024885223512777922m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">Available in 3 colours</div>
-                </button>
-            </model-viewer>
-</body>
-</html>
+    <img id="hero-image" src="../AR-Project/images/hero.png">
+ 
+     <div id="chair1" class="chairdiv">
+         <h2>Ventage Design</h2>
+         <p>Classic, Comes in various styles</p>
+         <model-viewer class="chairmodel" src="../AR-Project/models/Chair_3.glb"
+               alt="A 3D model of a chair"
+               ar ar-modes="webxr scene-viewer quick-look"
+               auto-rotate
+               camera-controls
+               camera-orbit="-166.8deg 92.33deg 1.94m" field-of-view="29.52deg"
+               shadow-intensity="1.3"
+               poster="../AR-Project/images/ventage.png">
+               <button class="Hotspot" slot="hotspot-1" data-position="0.16715653971969036m 0.7803913019253066m -0.21842339046894374m" data-normal="-0.2006674500067874m 0.42347170297172987m 0.8834049418528269m" data-visibility-attribute="visible">
+                 <div class="HotspotAnnotation">select material</div>
+             </button>
+             <button class="Hotspot" slot="hotspot-2" data-position="0.002076541567253773m 0.038162284368377986m 0.08584852310556401m" data-normal="0.19460309632210182m -0.07062535477545503m 0.9783361866785323m" data-visibility-attribute="visible">
+             <div class="HotspotAnnotation">durable steel</div>
+         </button>
+         </model-viewer>
+     </div>
+ 
+     <div id="chair2" class="chairdiv">
+         <h2>Egg style</h2>
+         <p>Simply modern, Fits all interior styles</p>
+         <model-viewer class="chairmodel" src="../AR-Project/models/Chair_2.glb"
+               alt="A 3D model of a chair"
+               ar ar-modes="webxr scene-viewer quick-look"
+               auto-rotate
+               shadow-intensity="1.3"
+               exposure="0.84"
+               camera-controls
+               camera-orbit="-153deg 90.2deg 2.7m" field-of-view="24.24deg"
+               poster=".../AR-Project/images/red-Camera 2.png">
+               <button class="Hotspot" slot="hotspot-1" data-position="-0.271649146255042m 0.967382372088277m 0.20947490450055595m" data-normal="0.13569774855317682m 0.5698070809574237m -0.8104973852693044m" data-visibility-attribute="visible">
+                 <div class="HotspotAnnotation">Lether Materials</div>
+             </button>
+         </model-viewer>
+     </div>
+ 
+     <div id="chair3" class="chairdiv">
+         <h2>greenchair</h2>
+         <p>Historically beautiful, Designed by an architect</p>
+         <model-viewer class="chairmodel" src="../AR-Project/models/Chair_4.glb"
+               alt="A 3D model of a chair"
+               ar ar-modes="webxr scene-viewer quick-look"
+               auto-rotate
+               shadow-intensity="1.3"
+               exposure="0.84"
+               camera-controls
+               camera-orbit="58.61deg 80.43deg 10.02m" field-of-view="22.25deg"
+               poster="../AR-Project/images/greenchair-Camera 2.png">
+               <button class="Hotspot" slot="hotspot-1" data-position="1.5233016856440766m 1.8408182620948652m 1.5082046081852138m" data-normal="-0.002630060941743107m 0.2640189567403992m 0.9645139051673408m" data-visibility-attribute="visible">
+                 <div class="HotspotAnnotation">3 colors</div>
+             </button>
+         </model-viewer>
+     </div>
+ 
+ 
+ </body>
+ </html>
