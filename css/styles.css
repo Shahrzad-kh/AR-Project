@@ -3,41 +3,44 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(8, 5, 18);
-    color:rgb(189, 170, 125)255, 179, 0;
+    color:rgb(205, 198, 179)255, 179, 0;
 }
  
 model-viewer {
     --poster-color: transparent;
-    --progress-bar-color: rgba(255, 255, 255, 0.5);
+    --progress-bar-color: rgba(124, 23, 23, 0.5);
     --progress-mask: transparent;
     --progress-container-color: transparent;
-    background-image: url(../images/hero.png);
+    /* background-image: url(../images/hero.png); */
 
 }
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../images/hero.png);
-    background-size: cover;
-    background-position: center;
-    min-height: 14rem;
-}
-.hero h1 {
+h2 {
     font-size: 1.5rem;
+    padding-left: 150px;
     margin: 0;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 2px rgba(49, 0, 0, 0.8);
+}
+p{
+    color: rgb(0, 0, 0);
+    padding-left: 150px;
 }
 
-.products-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.product-card h3 {
-    text-align: center;
-    padding: 0.625rem;
-    margin: 0;
-}
-.product-card img {
+.chairdiv {
     width: 100%;
+    color: rgb(255, 191, 0);
+    padding-top: 10PX;
+}
+
+.chairdiv{
+    background-color: rgb(203, 183, 140);
+}
+
+.chairmodel{
+    padding-left: 100px;
+}
+
+#hero-image{
+    padding-left: 400px;
+    height: 600px;
+    width: 700px;
 }
